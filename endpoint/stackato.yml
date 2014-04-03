@@ -1,0 +1,5 @@
+name: registry
+
+env:
+  CDN_URL:
+  GOVERSION: 1.2.1
