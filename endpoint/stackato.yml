@@ -1,4 +1,4 @@
-name: registry
+name: endpoint
 
 env:
   CDN_URL:
