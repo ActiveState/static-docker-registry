@@ -5,6 +5,8 @@ This is a demonstration of making 'docker pull' fetch layers (layers in
 particular, but also the metadata) directly from a CDN store instead of having
 to go throughly the comparably unreliable registry middleman.
 
+![](diagram.png)
+
 We achieve this using:
 
 1. [static registry support](https://github.com/dotcloud/docker/pull/4607) PR
