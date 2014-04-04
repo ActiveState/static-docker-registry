@@ -12,12 +12,12 @@ We achieve this using:
    though this is not strictly required if we add the headers to the endpoint app.
 
 2. [patching
-   docker-registry](https://github.com/ActiveState/docker-registry/commit/002bf256e7)
+   docker-registry](https://github.com/ActiveState/docker-registry/commit/eb461bfe2bea6ec9622ef977310ad18d0a040ca6)
    to store 'tags' and 'images' files under each repositority. this allows the
    docker client to directly request /tags and /images from the CDN. the /tags
    file in particular is required as it is not possible to enumerate the /tag_*
    files from the CDN. the patched registry is made available as a docker
-   image; `docker pull srid/docker-registry`
+   image; `docker pull srid/static-docker-registry`
 
 3. the [endpoint web
    app](https://github.com/ActiveState/static-docker-registry/blob/master/endpoint)
