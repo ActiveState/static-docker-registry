@@ -16,7 +16,8 @@ We achieve this using:
    to store 'tags' and 'images' files under each repositority. this allows the
    docker client to directly request /tags and /images from the CDN. the /tags
    file in particular is required as it is not possible to enumerate the /tag_*
-   files from the CDN.
+   files from the CDN. the patched registry is made available as a docker
+   image; `docker pull srid/docker-registry`
 
 3. the [endpoint web
    app](https://github.com/ActiveState/static-docker-registry/blob/master/endpoint)
