@@ -12,7 +12,7 @@ We achieve this using:
    though this is not strictly required if we add the headers to the endpoint app.
 
 2. [patching
-   docker-registry](https://github.com/ActiveState/docker-registry/commit/eb461bfe2bea6ec9622ef977310ad18d0a040ca6)
+   docker-registry](https://github.com/ActiveState/docker-registry/compare/static-registry)
    to store 'tags' and 'images' files under each repositority. this allows the
    docker client to directly request /tags and /images from the CDN. the /tags
    file in particular is required as it is not possible to enumerate the /tag_*
