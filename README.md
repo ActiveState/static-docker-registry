@@ -23,6 +23,9 @@ We achieve this using:
    that merely responds to registry API request with a redirect to the underlying
    CDN.
 
+4. Use a storage backend like Swift (or s3) in docker-registry (to which you
+   normally 'docker push'), and enable CDN syncing for use with the endpoint app.
+
 What happens when you run 'docker pull' is:
 
 * /v1/_ping is requested, and endpoint returns a 200 response
